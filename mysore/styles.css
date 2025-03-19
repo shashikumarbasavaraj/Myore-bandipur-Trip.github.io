@@ -1,0 +1,328 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section (First Page) */
+.hero-section {
+    background-image: url('gemini.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    color: #ffd700; /* Golden color */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+/* Itinerary Section (Second Page) */
+.itinerary-section.day1 {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 20px;
+    background-image: url('payana.jpg'); /* Add a background image for Day 1 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Itinerary Section (Third Page) */
+.itinerary-section.day2 {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 20px;
+    background-image: url('bandipur-background.jpg'); /* Add a background image for Day 2 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Side-by-side layout */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.itinerary-text {
+    flex: 2;
+}
+
+.roadmap {
+    flex: 1;
+    background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color */
+}
+
+.day {
+    margin-bottom: 30px;
+}
+
+.day h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.day ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.day ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.day ul li::before {
+    content: "•";
+    color: #ff6347;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Roadmap Section */
+.roadmap h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.roadmap-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.roadmap-images img {
+    width: 100%;
+    height: 200px; /* Medium size for roadmap images */
+    object-fit: cover; /* Ensures images are clearly visible */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Thank You Message */
+.thank-you-message {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ff6347;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Inclusion and Exclusion Section */
+.inclusion-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inclusion-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ff6347;
+    color: white;
+    font-size: 1.2rem;
+}
+
+table td {
+    font-size: 1.1rem;
+}
+
+/* Terms and Conditions Styling */
+.terms-conditions {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); /* Colorful gradient */
+}
+
+.pricing-details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Bank Details */
+.bank-details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bank-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bank-text {
+    text-align: left;
+}
+
+.qr-code img {
+    width: 150px; /* Reduced QR code size */
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cancellation Policy */
+.cancellation-policy {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancellation-policy ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cancellation-policy ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6347;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
